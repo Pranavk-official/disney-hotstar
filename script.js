@@ -2,12 +2,12 @@ let movies = [
     {
         name: "Title",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto at aperiam quaerat quas totam!",
-        image: "./static/images/slider 1.PNG"
+        image: "./static/images/slider\ 1.PNG"
     },
     {
         name: "Title",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto at aperiam quaerat quas totam!",
-        image: "./static/images/slider 2.PNG"
+        image: "./static/images/slider\ 2.PNG"
     },
     {
         name: "Title",
