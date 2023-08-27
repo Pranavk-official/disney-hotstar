@@ -194,7 +194,7 @@ body {
 
 /* RECCOMENDED SECTION */
 
-.card__title {
+.title {
     color: #fff;
     opacity: 0.9;
     padding-left: 4%;
@@ -223,3 +223,128 @@ body {
     scroll-behavior: smooth;
 }
 
+
+.card__container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 100px;
+    transition: 0.5s;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover , .card__body {
+    opacity: 1;
+}
+
+.card__body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4,8,15,0), #cbced4 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.card__title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+
+
+.card__desc {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+.watchlist-btn {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.watchlist-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(./static/images/add.png);
+    background-size: contain;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.pre-btn,
+.nxt-btn {
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pre-btn {
+    left: 0;
+    background: linear-gradient(right, #0c111b 0%, #0c111b00);
+}
+.next-btn {
+    right: 0;
+    background: linear-gradient(right, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.next-btn img {
+   width: 15px;
+   height: 20px;
+   opacity: 0; 
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
