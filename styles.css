@@ -210,13 +210,14 @@ body {
     margin: 10px 0 20px;
 }
 
-.card__container {
+.card-container {
     position: relative;
     width: 92%;
     padding-left: 10px;
     height: 220px;
     display: flex;
     margin: 0 auto;
+    /* justify-content: space-between; */
     align-items: center;
     overflow-x: auto;
     overflow-y: visible;
@@ -224,7 +225,7 @@ body {
 }
 
 
-.card__container::-webkit-scrollbar {
+.card-container::-webkit-scrollbar {
     display: none;
 }
 
@@ -235,7 +236,7 @@ body {
     height: 200px;
     border-radius: 5px;
     overflow: hidden;
-    margin-right: 100px;
+    margin-right: 10px;
     transition: 0.5s;
 }
 
@@ -249,11 +250,11 @@ body {
     transform: scale(1.1);
 }
 
-.card:hover , .card__body {
+.card:hover .card-body {
     opacity: 1;
 }
 
-.card__body {
+.card-body {
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -261,7 +262,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-    background: linear-gradient(to bottom, rgba(4,8,15,0), #cbced4 90%);
+    background: linear-gradient(to bottom, rgba(4,8,15,0), #192133 90%);
     padding: 10px;
     transition: 0.5s;
 }
@@ -330,15 +331,15 @@ body {
 
 .pre-btn {
     left: 0;
-    background: linear-gradient(right, #0c111b 0%, #0c111b00);
+    background: linear-gradient(to right, #0c111b 0%, #0c111b00);
 }
-.next-btn {
+.nxt-btn {
     right: 0;
-    background: linear-gradient(right, #0c111b 0%, #0c111b00);
+    background: linear-gradient(to left, #0c111b 0%, #0c111b00);
 }
 
 .pre-btn img,
-.next-btn img {
+.nxt-btn img {
    width: 15px;
    height: 20px;
    opacity: 0; 
